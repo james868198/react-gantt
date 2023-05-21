@@ -390,11 +390,9 @@ export const Gantt: React.FunctionComponent<GanttProps> = ({
   const gridProps: GridProps = {
     columnWidth,
     svgWidth,
-    tasks: tasks,
+    tasksNum: tasks.length,
     rowHeight,
-    dates: dateSetup.dates,
-    todayColor,
-    rtl,
+    datesNum: dateSetup.dates.length,
   };
   const calendarProps: CalendarProps = {
     dateSetup,
